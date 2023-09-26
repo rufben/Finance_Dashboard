@@ -13,7 +13,7 @@ st.set_page_config(page_title = "Med-Kick Finance Dashboard",
 
 @st.cache_data()
 def rev_dash():
-    df = Finance_Dashboard/FinDataOutput(Revenue).csv
+    df = FinDataOutput(Revenue).csv
     df.head(5)
     return df 
 
