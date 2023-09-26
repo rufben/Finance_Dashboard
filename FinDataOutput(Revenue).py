@@ -13,7 +13,7 @@ st.set_page_config(page_title = "Med-Kick Finance Dashboard",
 
 @st.cache_data()
 def rev_dash():
-    data_url = "https://raw.githubusercontent.com/rufben/repo/main/FinDataOutput(Revenue).csv"
+    data_url = "https://raw.githubusercontent.com/rufben/Finance_Dashboard/main/FinDataOutput(Revenue).csv"
     df = pd.read_csv(data_url)
     df.head(5)
     return df 
